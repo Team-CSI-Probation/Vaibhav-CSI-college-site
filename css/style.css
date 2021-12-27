@@ -61,3 +61,21 @@
     background-size: cover;
     background-blend-mode: darken;
 }
+
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.firstSection{
+    height:100vh;
+}
+.firstHalf{
+    height:100vh;
+}
+.secondHalf{
+    height:100vh;
+}
