@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 34%;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-list
+{
+    align-items: center;
+    justify-content: center;
+    padding: 28px 0;
+    display: flex;
+}
+.nav-list li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: larger;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 0;
+    position: relative;
+}
+
+
+.nav-list li a::after{
+    content: '';
+    background: rgb(219, 91, 59);
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+    
+}
+
+.nav-list li a:hover::after{
+    width: 100%;
+}
+
+.right-nav{
+    width : 50%;
+    text-align: right;
+    display: flexbox;
+    padding-right: 3%;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid rgb(175, 173, 173);
+    border-radius: 9px;
+}
+.btn {
+    background-color: #A51C30; /* Green */
+    border: solid rgb(255, 255, 255);
+    border-width: 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+
+.background{
+    background: rgba(0, 0, 0,0) url('/img/bg.jpg');
+    background-size: cover;
+}
+
+
+.about{
+    
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    margin-bottom: 40%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100px;
+    height: 1000px;
+}
+.about-txt{
+    text-align: center;
+    font-size: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+}
+.small-txt{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+}
+.big-txt{
+    text-align: center;
+    justify-content: center;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+footer
+{
+  /* margin-top: 7%;   */
+    padding-top: 5%;
+    text-align: center;
+    background-color: rgb(218, 182, 182);
+}
+.fab,.fas
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    color: black;
+}
+.fab:hover
+{
+    color: honeydew;
+}
+.fas:hover
+{
+    color: honeydew;
+}
+
+.foot-cont{
+    align-items: center;
+    margin: auto ;
+    padding-bottom: 4%;
+    padding-top: 0.5%;
+}
