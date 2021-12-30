@@ -4,15 +4,24 @@
     color: white;
     margin-top: 100px;
     margin-bottom: 300px;
+    width: 100%;
+    font-size: 30px;
 }
+
 .form-label{
     font-size: larger;
 }
+
 .form-control{
     text-align: center;
+    font-size:100% ;
     border-radius: 35%;
-    
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
 }
+
 .btn1{
     margin-top: 5%;
     background-color: #A51C30; /* Green */
@@ -126,7 +135,6 @@
 
 footer
 {
-  /* margin-top: 7%;   */
     padding-top: 5%;
     text-align: center;
     background-color: rgb(218, 182, 182);
