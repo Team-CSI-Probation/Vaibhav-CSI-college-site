@@ -102,7 +102,7 @@
 }
 
 .background{
-    background: rgba(0, 0, 0,0) url('/img/bg.jpg');
+    background: rgba(0, 0, 0,0) url("../img/bg.jpg");
     background-size: cover;
 }
 
