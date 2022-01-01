@@ -2,7 +2,7 @@
     align-items: center;
     text-align: center;    
     color: white;
-    margin-top: 100px;
+    padding-top: 20%;
     margin-bottom: 300px;
     width: 100%;
     font-size: 30px;
@@ -15,25 +15,14 @@
 .form-control{
     text-align: center;
     font-size:100% ;
-    border-radius: 35%;
     padding-right: 3%;
     padding-left: 3%;
     padding-top: 0.2%;
     padding-bottom: 0.2%;
 }
 
-.btn1{
-    margin-top: 5%;
-    background-color: #A51C30; /* Green */
-    border: solid rgb(255, 255, 255);
-    border-width: 3px;
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
+
+
 *{
     margin:0;
     padding:0;
@@ -41,7 +30,14 @@
 
 .navbar{
     display: flex;
-}
+    position: fixed;
+    z-index: 100000000;
+
+    top: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    background: rgb(253, 253, 253) ;
+  }
 
 .logo{
     width: 20%;
@@ -56,13 +52,12 @@
     border: 3px solid white;
 }
 
-
-
 .navbar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .nav-list
 {
     align-items: center;
@@ -70,18 +65,19 @@
     padding: 28px 0;
     display: flex;
 }
+
 .nav-list li{
     display: inline-block;
     margin: 0 15px;
     font-size: larger;
 }
+
 .nav-list li a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     padding: 5px 0;
     position: relative;
 }
-
 
 .nav-list li a::after{
     content: '';
@@ -110,24 +106,45 @@
     padding: 5px;
     font-size: 17px;
     border: 2px solid rgb(175, 173, 173);
-    border-radius: 15px;
 }
+
 .btn {
-    background-color: #A51C30; /* Green */
+    background-color: black; /* Green */
     border: solid rgb(255, 255, 255);
     border-width: 3px;
     color: rgb(255, 255, 255);
-    padding: 4px 8px;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+}
+.btn1 {
+    background-color: black; /* Green */
+    border: solid rgb(255, 255, 255);
+    border-width: 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.btn:hover,.btn1:hover,.btn-sm:hover{
+  background-color: brown;
+  transition: 0.75s;
+}
+
+.btn-sm{
+  padding: 1ch;
+}
 
 
 
 .background{
-    background: rgba(0, 0, 0,0) url('/img/bg.jpg');
+    background: rgba(0, 0, 0,0) url('../img/bg.jpg');
     background-size: cover;
 }
 
