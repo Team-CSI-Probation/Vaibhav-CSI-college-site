@@ -107,8 +107,8 @@
     border: 2px solid rgb(175, 173, 173);
 }
 
-.btn {
-    background-color: black; /* Green */
+.btn,.btn1 {
+    background-color: rgb(51, 50, 50); /* Green */
     border: solid rgb(255, 255, 255);
     border-width: 3px;
     color: rgb(255, 255, 255);
