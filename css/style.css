@@ -78,11 +78,11 @@
 #search{
     padding: 5px;
     font-size: 17px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(189, 188, 188);
 }
 
 .btn,.btn1 {
-    background-color: black; /* Green */
+    background-color: rgb(51, 50, 50); /* Green */
     border: solid rgb(255, 255, 255);
     border-width: 3px;
     color: rgb(255, 255, 255);
@@ -135,18 +135,7 @@
     background-size: cover;
 }
 
-.section{
-    max-width:100%;
-    display: flex;
-}
-.block{
-    width:33.333%;
-    align-items: center;
-    text-align: center;
-    padding: 2%;
-    margin-top: 10%;
-    margin-bottom: 20%;
-}
+
 .image:hover{
     transform: rotateY(180deg);
 }
@@ -159,6 +148,45 @@
 }
 
 
+.flip-card {
+  background-color: transparent;
+  display: flex;
+  /* perspective: 1000px; */
+}
+
+.flip-card-inner{
+    width:33.333%;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card .flip-card-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: inherit;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;    
+  align-content: center;
+}
 
 
 .about{
